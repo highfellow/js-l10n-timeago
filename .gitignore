@@ -3,5 +3,5 @@ example/js/l10n.js
 example/js/require.js
 example/js/l10n-browser.js
 example/js/timeago.js
-
+example/js/jquery-1.8.3.min.js
 
