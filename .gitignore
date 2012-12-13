@@ -1,3 +1,7 @@
 *.swp
-example/js
+example/js/l10n.js
+example/js/require.js
+example/js/l10n-browser.js
+example/js/timeago.js
+
 
