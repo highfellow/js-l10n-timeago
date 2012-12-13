@@ -38,4 +38,4 @@ For other configuration information, see the [original documentation](http://pra
 Example code
 ============
 
-There is some test code in the `example` directory, which generates time elements with a range of different ages, so you can see the times roll over. This is online [here](http://highfellow.github.com/js-l10n-timeago/example.html). 
+There is some test code in the `example` directory, which generates time elements with a range of different ages, so you can see the times roll over. There are locale files included for English and German. This is online [here](http://highfellow.github.com/js-l10n-timeago/example.html). 
