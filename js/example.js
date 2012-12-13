@@ -27,7 +27,6 @@ requirejs(["timeago", "l10n", "l10n-browser"], function(timeago, l10n, l10nBrows
       var unit = 0;
       while (unit < l10nUnits.length) {
         var l10nUnit = l10nUnits[unit];
-        console.log('unit', unit, 'l10nUnit', l10nUnit);
         var unitMillis = l10nUnit.minutes * 60000;
         var rowStr = '<tr><td>' + l('unit' + l10nUnit.l10nUnit) + '</td><td>' + l10nUnit.minutes + '</td><td>';
         if (unit === 0) rowStr += makeTimeElt(0);
