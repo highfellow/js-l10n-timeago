@@ -31,6 +31,11 @@ timeAgoMinutes[one] = 1 minute ago
 timeAgoMinutes[other] = {{n}} minutes ago
 ```
 
-For the format of the plural strings in the strings file, see the example directory and the documentation for [webL10n](https://github.com/fabi1cazenave/webL10n).
+For the format of the plural strings in the strings file, see the `example` directory and the documentation for [webL10n](https://github.com/fabi1cazenave/webL10n).
 
 For other configuration information, see the [original documentation](http://pragmaticly.github.com/smart-time-ago/).
+
+Example code
+============
+
+There is some test code in the `example` directory, which generates time elements with a range of different ages, so you can see the times roll over. This is online: 
