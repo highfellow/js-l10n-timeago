@@ -3,6 +3,7 @@
 requirejs(["timeago", "l10n", "l10n-browser"], function(timeago, l10n, l10nBrowser) {
   $(function() {
     var l = l10n.get;
+    var lang;
 
     function relDateString(millis) {
       var curDate = new Date();
@@ -43,9 +44,16 @@ requirejs(["timeago", "l10n", "l10n-browser"], function(timeago, l10n, l10nBrows
         unit++;
       }
     }
-
+    
+    if (typeof(navigator.browserLanguage) !== 'undefined') {
+      // handle IE.
+      lang = navigator.browserLanguage;
+    } else {
+      // everyone else
+      lang = navigator.language;
+    }
     l10n.setAdapter(l10nBrowser, {baseURL: "locales/"});
-    l10n.loadResource('data.properties', 'en', function() {
+    l10n.loadResource('data.properties', lang , function() {
       renderLocale();
       $('body').timeago();
     });
